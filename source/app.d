@@ -3,6 +3,9 @@ import vibe.d;
 import config: Config;
 static import blog;
 
+import vibe.core.log;
+import std.conv;
+
 shared static this()
 {
     auto config = new Config();

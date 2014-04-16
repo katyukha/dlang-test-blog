@@ -5,7 +5,10 @@
 	"authors": ["firemage"],
 	"dependencies": {
 		"vibe-d": "~master",
-        "dvorm": "~master"
+        "dvorm": {
+            "version": "~master",
+            "path": "libs/Dvorm",
+        },
 	},
     "subConfigurations": {
         "dvorm": "forvibe"

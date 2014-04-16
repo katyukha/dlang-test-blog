@@ -1,9 +1,19 @@
 H1 Hello World
 
-table
-    tr
-        th Test var value
-        td=test
+div#blog-post-list
+    - foreach( post; posts )
+        div.blog-post
+            a(href=post.getURL)
+                h2= post.title
+            p=post.text
+        
 
-
+form(method="post",action="/blog/add")
+    input(type="text",name="slug")
+    br
+    input(type="text",name="title")
+    br
+    textarea(name="text")
+    br
+    button(type="submit") Submit
 

@@ -5,12 +5,11 @@ import vibe.web.web;
 
 public import blog.web;
 
-import std.stdio;
-import vibe.core.log;
-import std.conv;
 
 void register(URLRouter router){
+
+    // register views
     auto postViewSettings = new WebInterfaceSettings();
-    postViewSettings.urlPrefix = "/blog/post";
+    postViewSettings.urlPrefix = "/blog/";
     registerWebInterface(router, new PostView, postViewSettings);
 }

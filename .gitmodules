@@ -1,0 +1,3 @@
+[submodule "libs/Dvorm"]
+	path = libs/Dvorm
+	url = https://github.com/rikkimax/Dvorm.git
